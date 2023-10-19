@@ -5,3 +5,8 @@ metadata:
   namespace: flux-system
 resources:
   - deployment.yaml
+images:
+  - name: ghcr.io/emilk92/cpp-prog-docker
+    newname: ghcr.io/emilk92/cpp-prog-docker # {"$imagepolicy": "flux-system:podinfo:name"}
+    newTag: 1.1.3 # {"$imagepolicy": "flux-system:podinfo:tag"}
+
