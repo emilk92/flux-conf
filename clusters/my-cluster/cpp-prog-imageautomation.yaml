@@ -14,4 +14,4 @@ spec:
     messageTemplate: 'update image'
   interval: 1m0s
   update:
-    strategy: Setters
+    strategy: RollingUpdate
