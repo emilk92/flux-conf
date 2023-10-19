@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   checkout:
-    branch: main
+    branch: master
     gitRepositoryRef:
       name: cpp-prog-imagerepo
   commit:
