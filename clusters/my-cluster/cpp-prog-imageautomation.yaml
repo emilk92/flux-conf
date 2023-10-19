@@ -7,7 +7,7 @@ spec:
   checkout:
     branch: master
     gitRepositoryRef:
-      name: cpp-prog-imagerepo
+      name: cpp-prog-git
   commit:
     authorEmail: fluxcdbot@particule.io
     authorName: fluxcdbot
