@@ -4,7 +4,7 @@ metadata:
   name: cpp-prog
   namespace: flux-system
 spec:
-  replicas: 5
+  replicas: 6
   strategy:
     type: RollingUpdate
     rollingUpdate:
