@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 2m0s
-  path: ./kustomize
+  path: ./clusters/my-cluster/cpp-prog/kustomize
   prune: true
   sourceRef:
     kind: GitRepository
