@@ -10,7 +10,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: cpp-prog
+    name: cpp-prog-git
   targetNamespace: default
   timeout: 2m0s
   wait: true
