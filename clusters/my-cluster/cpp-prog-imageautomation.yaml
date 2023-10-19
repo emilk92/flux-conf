@@ -4,14 +4,21 @@ metadata:
   name: cpp-prog-imageautomation
   namespace: flux-system
 spec:
-  checkout:
-    branch: master
-    gitRepositoryRef:
-      name: cpp-prog-git
-  commit:
-    authorEmail: fluxcdbot@particule.io
-    authorName: fluxcdbot
-    messageTemplate: 'update image'
   interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: cpp-prog-git
+  git:
+    checkout:
+      ref:
+        branch: master
+    commit:
+      author:
+        email: fluxcdbot@users.noreply.github.com
+        name: fluxcdbot
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: master
   update:
+    path: ./clusters/my-cluster/cpp-prog
     strategy: Setters
