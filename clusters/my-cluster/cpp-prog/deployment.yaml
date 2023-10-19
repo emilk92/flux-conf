@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cpp-prog
+  namespace: flux-system
 spec:
   replicas: 5
   strategy:
